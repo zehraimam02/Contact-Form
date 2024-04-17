@@ -1,0 +1,105 @@
+/* Applied box-sizing to all elements */
+*{
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;  /* Margin around the body */
+    font-size: 17px;
+    padding: 8px;   /* Padding inside the body */
+}
+
+
+/* Header styles */
+.header {
+    background: linear-gradient(-45deg, rgb(67, 1, 159), indigo, purple);
+    padding: 5px 20px 15px 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    text-align: left;
+    width: 60%; /* Width of the header */
+    margin: 0 auto; /* Center the header horizontally */
+
+}
+
+
+/* Container styles */
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 35px 15px 30px;
+    border: 1px solid lightgray;
+    border-radius: 0px 0px 5px 5px;
+    width: 60%; 
+    margin: 0 auto; 
+}
+
+/* Select dropdown styles */
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 15px;
+    color: gray;
+}
+
+/* Styling for selected option in select dropdown */
+.form-group option:checked {
+    color: black;
+}
+
+/* Styling for options in select dropdown */
+.form-group select option {
+    color: black;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+/* Fieldset styles */
+fieldset {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Styling for main heading */
+.main_heading {
+    margin-bottom: 5px;
+}
+
+/* Styling for subheading in header */
+.header h5 {
+    margin-top: 5px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color:  purple;/* rgba(222, 15, 112, 0.753);*/
+    font-size: medium;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 10px;
+    
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color:  rgb(91, 0, 91); /*rgba(168, 13, 85, 0.753);*/
+}

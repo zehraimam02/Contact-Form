@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactform.css">  <!-- Link to external CSS file -->
+    <style>
+        /* Styling for the main and sub headings and paragraphs */
+        h1, h5 {
+            font-weight: 200;
+            font-style: normal;
+        }
+        h5 {
+            font-size: medium;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <h1 class="main_heading">Contact Form</h1>
+        <h5>Please fill all the texts in the field.</h5>
+    </div>
+
+    <!-- Container for the form -->
+    <div class="container">
+        <!-- Contact form -->
+        <form action="">
+            <!-- Input field for name -->
+            <p>Your Name:
+                <input type="text" name="name" placeholder="Your Full Name" id="name" required>
+            </p>
+            <!-- Input field for email -->
+            <p>Your Email:
+                <input type="email" name="email" placeholder="Valid Email Address" id="email" required>
+            </p>
+            <!-- Dropdown for selecting subject -->
+            <div class="form-group">
+                
+                <label for="subject">Subject:</label>
+                <select name="subject" id="subject" required>
+                    <option value="" hidden>Select an option</option>
+                    <option value="job-inquiry">Job Inquiry</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="customer-service">Customer Service</option>
+                    <option value="product-request">Product Request</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </div>
+            <!-- Textarea for message -->
+            <p>Message:
+                <textarea name="message" placeholder="Your Message to Us" id="message" cols="100" rows="8" required></textarea>
+            </p>
+             <!-- Submit button -->
+            <input type="submit" value="Send Message">
+        </form>
+        
+    </div>
+</body>
+</html>
